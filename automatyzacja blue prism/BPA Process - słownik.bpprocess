@@ -1,0 +1,37 @@
+﻿<process name="słownik_poprawna" version="1.0" bpversion="7.3.1.11999" narrative="" byrefcollection="true" processrunningmessage="" disableversioning="false" preferredid="7c9c1cd8-7773-4594-9168-f61120654ddf" published="true" published_type="2">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="e339b6d7-5a49-4c3a-b783-41a418534893" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>a9cebbab-2550-4dc8-a7b8-035d8f83baf5</onsuccess>
+  </stage>
+  <stage stageid="67d7007b-be19-4ea0-a6e4-35388422ecb4" name="End" type="End">
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="818642f1-03da-4042-ae8c-ce0a605873de" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="a9cebbab-2550-4dc8-a7b8-035d8f83baf5" name="slownik::Launch" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-60" />
+    <onsuccess>bab233cd-294e-46c4-8a77-e9d582893955</onsuccess>
+    <resource object="slownik" action="Launch" />
+  </stage>
+  <stage stageid="bab233cd-294e-46c4-8a77-e9d582893955" name="slownik::Główny proces" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="0" />
+    <onsuccess>957d0dd0-3a25-40d9-8776-452f0ed82843</onsuccess>
+    <resource object="slownik" action="Główny proces" />
+  </stage>
+  <stage stageid="957d0dd0-3a25-40d9-8776-452f0ed82843" name="slownik::Zamknij" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="45" />
+    <onsuccess>67d7007b-be19-4ea0-a6e4-35388422ecb4</onsuccess>
+    <resource object="slownik" action="Zamknij" />
+  </stage>
+</process>
